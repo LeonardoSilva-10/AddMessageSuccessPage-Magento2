@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="lsbrmessageadditionalsuccesspage" translate="label" sortOrder="238">
+            <label>Message Additional</label>
+        </tab>
+        <section id="lsbrmessageadditional" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Configuration</label>
+            <tab>lsbrmessageadditionalsuccesspage</tab>
+            <resource>LsBR_MessageAdditional::lsbrmessageadditional_config</resource>
+            <group id="general" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                <label>General</label>
+                <field id="active" translate="label" type="select" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="message" translate="label" type="textarea" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Message</label>
+                    <comment>This is field can add Tags HTML for example: h1 h3 p div</comment>
+                </field>
+                <field id="style" translate="label" type="textarea" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Style</label>
+                    <comment>This is field can add Style in format css</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
