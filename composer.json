@@ -1,0 +1,23 @@
+{
+    "name": "lsbr/messageadditionalsuccesspage",
+    "description": "Magento 2 Module for add message in success page",
+    "minimum-stability": "dev",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Leonardo Ferreira",
+            "email": "leoo03863@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "7*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "LsBr\\MessageAdditionalSuccessPage\\": ""
+        }
+    }
+}
